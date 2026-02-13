@@ -1,0 +1,42 @@
+{
+	"name": "Generic_parquet_dataset",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "Generic_ADLS_Connection",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"root_path": {
+				"type": "string"
+			},
+			"directory": {
+				"type": "string"
+			},
+			"file_name": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": {
+					"value": "@dataset().file_name",
+					"type": "Expression"
+				},
+				"folderPath": {
+					"value": "@dataset().directory",
+					"type": "Expression"
+				},
+				"fileSystem": {
+					"value": "@dataset().root_path",
+					"type": "Expression"
+				}
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
