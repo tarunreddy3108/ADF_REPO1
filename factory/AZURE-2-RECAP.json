@@ -1,0 +1,15 @@
+{
+	"name": "AZURE-2-RECAP",
+	"properties": {
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "71bdc1b2-632c-4997-9f35-700c9ae8ec59",
+		"tenantId": "3c151375-c321-4206-bdda-a61d32c1c2dd"
+	}
+}
