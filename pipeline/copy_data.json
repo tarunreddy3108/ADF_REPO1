@@ -50,8 +50,8 @@
 						"referenceName": "Generic_csv_dataset",
 						"type": "DatasetReference",
 						"parameters": {
-							"root_path": "dev",
-							"directory": "src",
+							"root_path": "practice-container",
+							"directory": "dev/src",
 							"file_name": "sales_data_1000_records.csv"
 						}
 					}
@@ -61,8 +61,8 @@
 						"referenceName": "Generic_parquet_dataset",
 						"type": "DatasetReference",
 						"parameters": {
-							"root_path": "dev",
-							"directory": "src",
+							"root_path": "practice-container",
+							"directory": "dev/src",
 							"file_name": "sales_data_1000_records_json.json"
 						}
 					}
