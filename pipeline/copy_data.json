@@ -63,7 +63,7 @@
 						"parameters": {
 							"root_path": "practice-container",
 							"directory": "dev/src",
-							"file_name": "sales_data_1000_records_json.json"
+							"file_name": "sales_data_1000_records_par"
 						}
 					}
 				]
